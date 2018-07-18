@@ -2,7 +2,7 @@
 %-------------------------------------------------------------------------%
 %                    SPLIT-AND-AUGMENTED GIBBS SAMPLER (SPA)              %
 %                 APPLIED TO HANDWRITTEN DIGITS CLASSIFICATION            %
-%                        ON MNIST DATABASE (ONE-VS-ALL)                          %
+%                        ON MNIST DATABASE (ONE-VS-ALL)                   %
 %-------------------------------------------------------------------------%
 % File: SPA_MNIST_onevsall.m
 % Author: M. VONO
