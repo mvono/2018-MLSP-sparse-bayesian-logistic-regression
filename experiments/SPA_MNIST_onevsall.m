@@ -4,7 +4,7 @@
 %                 APPLIED TO HANDWRITTEN DIGITS CLASSIFICATION            %
 %                        ON MNIST DATABASE (ONE-VS-ALL)                          %
 %-------------------------------------------------------------------------%
-% File: SPA_MNIST.m
+% File: SPA_MNIST_onevsall.m
 % Author: M. VONO
 % Created on: 18/07/2018
 % Last modified : 18/07/2018
@@ -35,7 +35,7 @@ Nclass = length(unique(labels)); % number of differents classes
 % For each k-fold cross-validation procedure
 for nrep = 1:Nrep
     rng(nrep);
-    disp(['Repetition n° ' num2str(nrep) '.'])
+    disp(['Repetition nÂ° ' num2str(nrep) '.'])
     
     % Partition dataset into k folds
     cv = cvpartition(labels,'KFold',k);
@@ -81,7 +81,7 @@ for nrep = 1:Nrep
             probaUP(i+1,:) = quant_95;
             probaDOWN(i+1,:) = quant_5;
             
-            disp(['Binary classifier n° ' num2str(i+1) ' trained.']);
+            disp(['Binary classifier nÂ° ' num2str(i+1) ' trained.']);
         
         end
 
