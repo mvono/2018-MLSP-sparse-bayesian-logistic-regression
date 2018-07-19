@@ -30,7 +30,7 @@ load('../utils/initial_param_SPA.mat');
 % For each k-fold cross-validation procedure
 for nrep = 1:Nrep
     rng(nrep);
-    disp(['Repetition n° ' num2str(nrep) '.'])
+    disp(['Repetition nÂ° ' num2str(nrep) '.'])
 
     % For each MNIST binary classification problem
     for i = 1:Nexample
@@ -64,7 +64,7 @@ for nrep = 1:Nrep
             CI_90 = zeros(NTest,1);
             for t = 1:NTest
                     arr = proba(t,N_bi:end);
-                    quant_5 = quantile(arr,0.5);
+                    quant_5 = quantile(arr,0.05);
                     quant_95 = quantile(arr,0.95);
                     CI_90(t) = abs(quant_95 - quant_5);
             end
