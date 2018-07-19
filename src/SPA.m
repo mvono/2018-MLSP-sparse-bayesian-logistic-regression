@@ -6,8 +6,7 @@
 function [betaMC] = SPA(NTrain,D,rho,G,Q,alpha,y,XTrain,Dy,N_MC,tau)
 
 %-------------------------------------------------------------------------%
-% This function computes the SPA algorithm to solve the linear inverse 
-% problem y = H*x + n associated to the image inpainting problem.
+% This function computes the SPA algorithm to solve the logistic regression problem.
 
     % INPUTS:
         % NTrain: number of observations within the training set.
