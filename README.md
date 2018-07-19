@@ -10,4 +10,4 @@ Maxime Vono, Nicolas Dobigeon, Pierre Chainais, [Sparse Bayesian binary logistic
 Copyright
 -------
 
-Copyright (c) 2018 Maxime Vono
+Copyright (c) 2018 Maxime Vono.
