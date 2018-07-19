@@ -12,19 +12,14 @@ function beta = EPO(z1,z2,u1,u2,rho,NTrain,D,G,Q)
 % to the target distribution.
 
     % INPUTS:
-        % y: noisy observation (1D array).
-        % H: direct operator in the linear inverse problem y = H*x + n.
-        % sigma: user-defined standard deviation of the noise.
-        % U,Z,delta: current MCMC iterates of the other variables.
-        % rho: user-defined standard deviation of the variable of 
-        %      interest x.
-        % N,M: respectively, the dimension of X (2D-array) and y
-        % (1D-array).
-        % invQ: pre-computed covariance matrix involved in the posterior
-        % distribution of the variable of interest x.
+        % z1,z2,u1,u2: splitting and auxiliary variables.
+        % rho: hyperparameter associated to the variable splitting step.
+        % NTrain: number of observations within the training set.
+        % D: dimension of beta.
+        % G,Q: pre-processed matrices.
         
     % OUTPUT:
-        % x: sample from the posterior distribution of x (2D-array).
+        % beta: sample from the posterior distribution of beta.
 %-------------------------------------------------------------------------%
 
 %-------------------------------------------------------------------------%
